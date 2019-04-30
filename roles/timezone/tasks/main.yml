@@ -1,0 +1,12 @@
+---
+
+- name: set timezone
+  gather_facts: False
+  tasks:
+    - name: Set timezone variables
+      copy: content='Europe/Copenhagen'
+            dest=/etc/timezone
+            owner=root
+            group=root
+            mode=0644
+            backup=yes

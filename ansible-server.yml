@@ -1,0 +1,16 @@
+---
+
+- name: Ubuntu server playbook
+  hosts: localhost
+  roles:
+    - { role: common, become: true }
+    - { role: timezone, become: true }
+    - { role: locales, become: true }
+    - { role: ssh, become: true }
+    
+    
+    # Avaviable roles:
+    # - { role: python, become: true }
+    # - { role: docker, become: true }
+    # - { role: go, become: true }
+    # - { role: snmp, become: true }

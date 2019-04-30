@@ -1,0 +1,17 @@
+---
+
+# http://docs.ansible.com/ansible/playbooks_variables.html#variable-precedence-where-should-i-put-a-variable
+aptcachetime: 3600
+ssh:
+  start: true
+  service_enabled: true
+  root_login: false
+go:
+  download_location: "https://storage.googleapis.com/golang/{{ go_tarball }}"
+snmp:
+  user: user
+  community: community
+  location: location
+  sysname: sysname
+  contact: me <my@email.com>
+  
